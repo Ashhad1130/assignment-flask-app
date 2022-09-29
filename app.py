@@ -1,10 +1,10 @@
 import requests
 import re
-
+from flask_cors import CORS, cross_origin
 
 from flask import Flask,jsonify
 app = Flask(__name__)
-
+CORS(app)
 
 class WebScrape:
     URL = 'https://www.time.com'
