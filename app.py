@@ -31,7 +31,7 @@ def getTimeStories():
     data = WebScrape().getStoriesTitleandLink()
     requiredJson = []
     for i in range(len(data[0])):
-        jsonMap = {'title': data[0][i], 'link': 'http://www.time.com'+ data[1][i]}
+        jsonMap = {'title': data[0][i], 'link': 'http://www.time.com/'+ data[1][i]}
         requiredJson.append(jsonMap)
     return jsonify(requiredJson)
 if __name__ == '__main__':
